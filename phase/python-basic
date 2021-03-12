@@ -1,0 +1,1191 @@
+第一节 认识 python
+
+	- Mac python 编译环境
+		怎么运行一个文件
+		常用命令
+		1. 终端 zsh
+			1. 跳转
+			cd 
+			cd ..
+			mkdir xx
+			ls 
+			ls -a
+			touch xx.py
+			open xx文件夹
+			python day1.py
+			python3 xx.py 
+			rm test.py (移除文件)
+			manman
+
+java c++ python 高级语言 - 人类 html css.. 计算机语言：【高级语言-汇编-机器语言】
+	-> 指令 -> 双击
+python 3.9.. python -> “翻译包” -> 机器语言 01
+
+python2 
+
+python3.7 - 3.9 - 功能扩展
+
+IDE ： 编辑器
+vscode pycharm .. /
+洁面美观 / 自动
+
+
+
+编译器：
+文章 - word.. wps..
+写代码的平台
+
+	- python 语言
+		官方：面向对象的释性高级编程语言，具有动态语义。
+	机器语言 汇编语言 高级程序语言
+
+
+输出：
+	print("输入的内容")
+	...
+	...
+	...
+
+
+	print("hjahsd")
+
+
+赋值
+
+变量
+ox00101010101  10
+a 1.5
+b
+变量名 = 1+2
+fuzhi
+
+10 -> 内存 地址：0x0101001011
+
+地址 - 放的东西【10】
+变量名称：
+
+
+
+	二进制：0/1
+	电流：开/关
+[ 体重系统 ]
+体重
+51 多次使用 可变
+1. 51 > 10:
+	ok
+2. 51 > 50:
+	pianpang
+3. 51 > 70
+
+命名规则：
+1. 字母/数字/_ 组成
+2. 开头_ / 字母
+3. if print
+	a = 12
+	b = 10
+	c = a * b
+
+	price = 12
+	num = 10
+	sum = price * num
+
+
+字符串
+
+第二节 变量和数据类型
+
+	- 1）变量的概念
+		命名规则
+			字母数字下划线 
+			空格
+			关键字 函数名
+		命名意义	
+
+		1. 三个东西组成：字母 数字 下划线 
+		2. 为首：字母 下划线
+		3. 不能同名：关键字 函数名 if print
+
+		a 
+		b
+
+		c
+
+		price
+		num
+		sum total_price
+
+
+		1. total_price
+		2. 驼峰 totalPrice
+		3. 函数：首字母大写 TotalPrice
+
+		cpp
+		int a = 10909090909090; 8位 【a】【】【】【】【】【】【】【】【】【】【】
+		long : 64位
+		float：8 位
+		
+		动态分配
+		少【足够的空间】
+		多【小数 】
+
+		3. 区分大小写
+
+		name Name NAme ..
+
+	* 练习
+		1. abd_ca
+		2. _qwe
+		3. 1apple
+		4. hello-world
+		5. to_do123
+
+		消息存储、打印、修改
+
+	
+	- 2）数据类型
+		- Number
+			整数 （整型）
+			小数（浮点型）
+
+		- String
+		xzz
+			"一串的字符"
+			'xiaoming'
+			老张说：'你好世界'
+			"老张说："你好世界""
+			'老张说："你好世界"'
+			"老张说：'你好世界'"
+
+		- List
+		- Tuple
+		- Set
+		- Dictionary
+
+拼接
+	
+	- 1. 字符串
+		单引号、双引号、三引号
+		字符串常用函数
+			变量接收 = title() 
+			.upper()
+			upper【大写】
+			lower【小写】
+
+			print("")
+			code.upper()
+
+
+			比较字符串是否相同 - 忽略大小写
+
+		字符串操作
+			拼接
+			去除空白 strip 返回值 string
+		 //人工 ,  999 , 壹 ， //处理// 脏数据 // 数据 - //数据分析
+
+
+		制表符、换行符
+			\t 空格数量跟编译器有关 一般默认 4 个
+			\n
+			\ 转义字符
+
+		1. str + str 只能和字符串相加
+		2. str * 整数
+
+
+	*练习
+		打印一句名言
+		将名人姓名存储在 famous_person 中 再创建要显示的名言 message 最后以 xx 说:"..."形式输出。
+		namemessage
+		"+
+
+		字符串的拼接
+		
+		xzz s:"xx"
+
+
+	- 2. 整数
+		⚠️ 数据操作
+
+		+ - * / 
+		** // %
+		整数相除 四舍五入？
+
+		+ - * /
+
+		** 乘方
+		// 整除 四舍五入 
+		% 取余
+
+	- 3. 浮点数 
+		⚠️精度问题
+		0.1 + 0.1
+		0.2 + 0.2
+		2 * 0.2
+		0.2 * 0.1
+		3 * 0.1
+		存在原因：计算机内部存储数字的方式
+		//-> 价格 7.9 元精度风险 -> 整数 分 -> 
+		//-> 时间 -> 时间戳 197011 秒 毫秒 ->
+
+	- 4. 字符串与数字的拼接
+		类型错误
+			str
+			string(字符串)
+			int （）
+			float（）
+
+	"小明的年龄是age岁"
+	整型 - 字符串 str（）
+
+	* 练习
+		编写 4 个表达式，分别使用 加减乘除 运算 并输出。
+		将年龄存为变量 age
+		将祝福语存储为变量message 并输出为“祝你X岁生日快乐！”
+
+	- 5. 代码注释
+	//爬取网页
+	1. 团队/个人
+	2. 分解你的思路
+	
+	#链接爬取
+	xx():
+		hjaksda
+		asdas
+
+
+	#信息读取
+	xx ():
+		read(..)
+
+	#。。。
+		单行
+
+
+	- 3）小结
+		变量使用、创建、命名
+		字符串、大小写、首字母大写、去除空白
+		整数浮点数计算
+		str(数字)+字符串
+		字符串+字符串
+		字符串 * 数字
+
+	- 4） 扩展
+		获取用户输入
+		
+		print("")
+		
+		aa = input("提醒语句")
+		a = int(a)
+		
+		str() string
+		
+		计算！
+		int() integer
+		float()
+
+""
+
+		str()
+		int()
+		float()
+		print()
+
+		*练习：
+			已知总价等于单价乘于数量，假设用户输入的单价和数量都为整数的情况下，输出应付价格
+
+
+
+第三节 条件语句
+
+#上学的程序
+
+起床
+
+if 下雨 :
+	带伞
+	雨拖
+	..
+吃饭
+出门
+上课
+
+
+a > 10
+<
+>=
+<=
+
+
+	1. 布尔表达式
+
+	==  != >= <= > < 
+	2. 并列
+	< 5 小雨
+	> 0 多云
+	> 8 中雨
+	>= 10 大雨
+
+你和我 and
+你或我 or
+
+雨量 = 10
+
+	if score < 60 :
+    	print ("fail!")
+
+    if 
+    ....tiaojian	
+    :
+
+    ==  != >= <= > < 
+
+    int a = 10;
+    a = 10
+
+   {
+   	...
+   }
+ 	
+
+   缩进（4个空格）
+   	 满足条件要执行的内容
+
+if score < 60 :
+	print("fail")
+else :
+	print("pass")
+
+
+	2. 多个条件
+	and or 
+
+	and: true and true -> true
+	or: 任何条件满足 -> true
+
+	3. if - else
+
+	4. if - elif- elif.. - else 
+
+score = 80
+
+if score > 60:
+	print("pass")
+elif score > 40: [if score <= 60 and score > 40]
+	print("有点难过")
+elif score > 20 : 
+	print("很难过")
+elif score > 10:
+	print("极其难过")
+else:
+	print("躺了lei、。。")
+
+	* 练习
+	1. 输入三个数，进行从小到大的排序
+	2
+	6>= >=3
+	 打车起步价 8 元（ 3 KM以内），超过 3 KM，每公里 1.2 元 ，超过 5 KM，每公里1.5元。 输入公里数进行应收费用计算，输出应收费用
+	 licheng = int(..)
+	 if licheng <= 3 :
+	 	8
+	 elif licheng<=5:
+	 	8 + (licheng - 3) * 1.2
+	 	licheng * 1.2
+
+	
+	3. 判断闰年条件： 
+		1.能被400整除的就是閏年
+		2.能被4整除但不能被100整除的是閏年!
+		输入年份，判断是否是闰年
+
+	4. 判定是否是偶数 如果是 输出 An even number 不是输出 Not An even number
+	5. 
+	一个功能:
+	判断学生的成绩:
+		100<成绩>=90–>优秀
+		90<成绩>=80–>良好
+		80<成绩>=70–>一般
+		70<成绩>=60–>及格
+		60<成绩>=0–>不及格
+	其他就是:输入有误
+
+	a = 10
+	b = 20
+	c = 5
+	
+	if a > b or a > c:
+		print (1)
+	else :
+		print (2)
+
+	if a < b and a < c:
+		print(1)
+		if c < a :
+			print(2)
+
+	
+第四节 循环 index
+
+
+for student in range(0,5) :
+	[0,1,2,3,4]
+
+range(开始位置，结束位置, 步长)
+range(开始位置，结束位置，1)  - 默认 步长 1
+range（0，结束位置，1）- 0 - 1
+
+#倒序输出
+1. 排序
+
+[0,5)
+
+
+1. for .. in ..
+1.1. i
+2. range()
+3. :
+
+range 参数
+* 练习
+	1. 99 乘法表
+	2. 求和 [1-1000的总和]
+	3. 阶乘
+
+倒着输出
+*练习 
+
+1.打印正方形
+用户输入的：n
+
+
+*  *  *  *  * 
+*  *  *  *  * 
+*  *  *  *  *
+*  *  *  *  * 
+*  *  *  *  *
+
+2.  行数：n  5 
+* 
+*  * 
+*  *  *
+*  *  *  * 4
+*  *  *  *  * 5
+*  *  *  *  * * 6
+
+print()
+
+
+猜数字游戏
+
+
+
+计数循环
+条件循环
+
+while 条件 ：
+1. while
+2. 条件 （条件 = true 才会进入）
+3 :
+	
+break
+
+continue
+
+	* 核心练习：
+	n = 5	line = 3
+	两种：星 空格
+	联系：[1,2,3]
+	for i range(1,4):
+		print (" " line - i)
+		print("*" 2 * i - 1)
+
+		  * i = 1 space = 2 line - i  "*" = 2 * i  - 1
+		 *** i = 2 space = 1 "*" = 3
+		***** i = 3 space = 0 "*" = 5
+
+	line = 5
+		   *
+		  ***
+		 *****
+		*******
+
+	#图形题的扩展
+
+	max_star = 7
+ 		   *
+		  ***
+		 *****
+		*******
+		 *****
+		  ***
+		   *
+
+		   
+
+ 		*******
+		 *****
+		  ***
+		   *
+		  ***
+		 *****
+		*******
+
+
+
+
+		#1. 打印 99 乘法表
+
+		1 * 1 = 1
+		1 * 2 = 2  2 * 2 = 4
+		1 * 3 = 3  2 * 3 = 6  3 * 3 = 9
+		1 * 4 = 4  2 * 4 = 8  3 * 4 = 12  4 * 4 = 16
+		1 * 5 = 5  2 * 5 = 10 3 * 5 = 15  4 * 5 = 20  5 * 5 = 25
+		...
+		1 * 9 = 9  2 * 9 = 18  3 * 9 = 27  4 * 9 = 36  5 * 9 = 45  6 * 9 = 54  7 * 9 = 63  8 * 9 = 72  9 * 9 = 81
+
+		# 百钱买百鸡
+		有100元钱，买100只鸡，公鸡 g 5元一只，母鸡 m 3元一只，小鸡x 1元三只，共多少种买法。
+		x / 3 + m * 3 + 5 * g = 100
+		x + m + g = 100 
+		#拼凑
+		#编程 循环 - 暴力解法 [0-20] [0-100] [0-100] 【4个数字的密码 ！ - ..尝试次数 尝试：1 - 1 - 1 - 1】
+
+		写程序求表达式 a + aa + aaa + aaaa+ … 的结果，其中a是1~9的数字，求和的项数用n来控制。（a和n可以用变量来表示）
+
+		例如：a 为 3， n为5的时候： 3 + 33 + 333 + 3333 + 33333
+		a = 4 n = 5 
+		4 + 44 + 444 ..+44444
+
+		#基础排序 冒泡
+
+
+
+第五节 集合 列表
+	1. 概念
+		由一系列按照特定顺序排列的元素组成。list = [1,2,3,4,5,6]
+
+		list = []
+	- 创建 空列表
+
+	- 增加 append
+
+	列表名.append(元素)
+	print()
+	.
+
+	对象 Object
+	【
+	..
+	..
+
+	】
+	面向对象 - 编程
+
+	⚠️append()
+		0. 调用方式 .
+		1. 在末尾进行增加
+
+
+	- 点
+
+
+	- 包含元素内容
+		1. 包含 数字、字符串、浮点型、列表
+		2. 同时
+
+	- 获取/索引 0
+		index
+
+	⚠️
+	#肯定是数字
+			for i in [1,2,3,4]:
+
+	#列表所包含的全部元素
+		循环 可以 in 列表
+
+
+[截取 list 【。。。【。】。】]
+	
+	- 分片  分片简写 结果类型[开始 : 结束位置]
+		【开始 : 结束: 步长)
+
+		 -> (:结束) 默认从 0 开始->pos
+		 -> (开始:)  pos -> 默认 list 末尾
+
+int:
+0[3]
+ list[0][3]
+
+	range(10,15)
+		[1,2,4,"string",'test','yyy']
+
+		【。。。【。】。】1：4】
+
+
+2 。。string
+
+	- 修改元素
+		1. 获得
+			family[2] = 'xiaozhang'
+		2. 修改
+
+		insert(插入位置,插入元素)
+		[a,b,c]
+
+	- extend 化整为零 insert / append 与 extend 区别
+
+	增删改查
+
+	- 
+	删除 remove() 
+		-> in list <- value
+
+		del 根据索引删除
+		
+	pop()
+		1. 返回最后一个元素内容
+		2. 删除
+
+	- 搜索 in 
+		len(family)
+
+	- 查询 循环
+		for - 
+		index
+		'mom' in family -> False True
+
+			..
+	
+	- 排序 sort 逆序
+
+	* 基础练习
+	1. 已知一个列表
+		lst = [1,2,3,4,5]
+
+		求列表的长度
+		判断6 是否在列表中
+		lst + [6, 7, 8] 的结果是什么？
+		lst*2 的结果是什么
+		列表里元素的最大值是多少
+		列表里元素的最小值是多少
+		列表里所有元素的和是多少
+		在索引1的位置新增一个的元素10
+		在列表的末尾新增一个元素20
+
+	2. lst = [1,4, 6,7,8,10]
+		请将列表里所有数字修改成原来的两倍并一次进行输出
+
+	3. 合并列表
+		lst = [1,2,3]
+		lst2 = [4,5,6]
+		不使用 + 号运算符，将lst2合并到lst的末尾，并思考，这个过程中，是否产生了新的列表	
+
+	4. 列表操作练习
+		列表lst 内容如下
+
+		lst = [2, 5, 6, 7, 8, 9, 2, 9, 9]
+		请写程序完成下列操作
+
+		在列表的末尾增加元素15
+		在列表的中间位置插入元素20
+		将列表[2, 5, 6]合并到lst中
+		移除列表中索引为3的元素
+		翻转列表里的所有元素
+		对列表里的元素进行排序，从小到大一次，从大到小一次
+
+
+
+	2. 使用
+		多个元素
+		[]表示
+		fruit = ['apple','banana','strawberry']
+	3. 访问
+		1. 下标 0 -1
+
+
+	* 练习	
+		将朋友的姓名：老张，老王，老赵 等姓名存储在一个列表中，并将其命名为 names ，访问列表中每一个元素，从而将朋友的姓名都打印出来
+
+	4. 修改、添加、删除元素
+		append()
+		insert()
+		pop() index
+		remove() value
+
+	* 练习
+		邀约 3 位嘉宾
+
+
+	5. 排序
+		sort()
+
+		cars = ['bmw','audi','toyata','accord']
+
+列表操作：
+		sorted()
+		reverse()
+		len()
+
+	* 练习
+		罗列 5 个旅游地
+		按字母排序
+		倒序
+		统计
+
+	补充：
+	0. 列表复制
+	1. 双重列表数据表
+	列表里面存放列表情况 二维
+	2. 
+	元组：my_tuple = ("red","green","blue")
+
+
+第七节 字典
+	
+	dict 字典：是一种将两个东西关联在一起的方式，被关联在一起的两个东西分别称为键（key）和值（value）。
+	X - O
+
+	键值对：字典的每一项（item）或条目（entry）都有一个键和一个值，它们合起来被称为键值对
+
+	电话通讯录为例
+	xiaoming - 90123
+	
+	person
+	[name password address .. phone]
+	
+	xiaozhang 89213
+	xiaohong 89343
+
+	1. 创建
+	phoneNumbers = {}
+
+	2. 增加
+		key  -> value
+		phoneNumbers['xiaoming'] = 1222123123
+
+		为了查询
+	
+	phoneNumbers["John"] = "12312"
+
+	3. 打印
+	print(phoneNumbers)
+
+	⚠️phoneNumbers['xiaozhang'] = 12312
+		如果有 ‘xiaozhang’：修改
+		没有：增加操作
+
+	4. 继续添加 list
+
+	5. 按照姓名进行查询
+		dictName[key]
+		list[0]
+
+		1. 不能使用 value 去获得 key
+		2. key / value 类型 KeyError key / value 字符串、整型、浮点型 列表
+			key 不可以为 list dictName[list] -> 设计：混乱 
+			value 可以 list 不影响 value[0]-> 进一步修改
+
+	5.1 字典和列表比较：
+		- 包含的元素内容 value：
+		- 查找的方式 
+
+		+ 顺序存储[][][][]【】【】【】内存空间消耗 
+
+		dict【】零碎 【】 【】随机 - 精准的知道 - 哈希 - 哈希 code -> address -> value
+		
+		dict 不一样 ：
+
+		哈希表 HashTable
+
+		+ 访问方式
+
+	6. 获得所有的键
+		keys()
+		key: 独一
+
+
+	7. 获得所有的值
+		values()
+
+	8. 删除条目
+	del
+	.clear()
+
+	9. in 判断是否存在
+ if 'xiu' in  list:
+
+	key - 询问
+	value - 不可
+//key - value 询问
+
+
+哈希表（hash table）
+	字典的键只能使用不可变类型：布尔 整数 浮点数 字符串 元组
+
+1.写代码，有如下字典，按照要求实现每一个功能,dic = {'k1':'v1','k2':'v2','k3':[11,22,33]}
+	1. 请循环输出所有的 key
+	2. 请循环输出所有的 value
+	3. 请循环输出所有的 key 和 value
+	4. 请在字典中添加一个键值对，'k4':'v4',输出添加后的字典
+	5. 请在修改字典中“k1”对应的值为“alex”，输出修改后的字典
+	6. 请在k3对应的值中追加一个元素44，输出修改后的字典
+	7. 请在k3对应的值的第1个位置插入个元素18，输出修改后的字典
+	8. 请删除字典中键值对，'k1':'v1'，并输出删除后的字典
+	9. 请获取字典中'k2'对应的值
+
+第八节 函数
+
+	函数（function）：像代码的积木。可以反复使用
+	对象（Object）：可以把程序中的各部分描述成自包含的单元
+	模块（module）：包含程序各部分的单独文件
+
+	print()
+	string: str()\upper()\lower()\title()
+	int()
+	float()
+	input()
+	//1. 计算 2. if else / while ...
+
+
+	1. 创建
+		def 关键字
+		
+		1. def
+		2. 函数名（任何 根据函数实现的功能 进行命名）
+		3. ()
+		4. :
+
+		def printAddress():
+			print ("zhejiang")
+			print ("hangzhou")
+			print("xx")
+
+		1. 函数是只有调用了 才会被执行
+
+
+	2. 调用
+		函数名+括号 
+
+	3. 运行
+		主程序 -> 函数调用 -> 执行 -> 函数完成 继续主程序
+
+	4. 调用函数：
+		一旦定义了  就可以反复调用。
+		循环也能做一样的事
+
+	（二）传递参数
+		name
+
+		多参数：形参（接收部分） 实参（调用部分）
+
+		参数数量是否有要求
+
+		参数的命名
+ ，
+	（三）返回值函数
+		return
+
+	5. 变量的作用域，局部变量和全局变量
+	
+	>>	局部变量： 在函数外面去打印这个值
+		NameError: name 'num1' is not defined
+
+	>>	全局变量： 
+
+			1. 尝试在函数内部进行使用
+			2. 尝试在函数内部对值进行修改
+			具有更大的作用域，更大，指的就是程序的主部分
+
+			会发生什么事？
+				创建一个新的局部变量
+				函数外部的同变量会发生怎么样的变化？
+
+	python 会创建一个新的局部变量，主要是为了防止函数无意的改变全局变量
+
+	>> （*） 如果需要在函数内部改变一个全局变量的值，又要怎么做？ global
+
+	建议：局部变量和全局变量使用相同的名字，因为：很难知道哪些变量是局部的 哪些是全局的，从而代码混乱
+
+
+	总结：
+		1. 什么是函数【
+
+		】
+		2. 什么参数
+		3. 单个参数如何传递
+		4. 多个参数如何传递
+		5. 返回值 return .. -> 接收 bianlaing  = hangshuName()
+
+
+		a = a.upper()
+		upper()
+		a = upper() -> 返回一个东西 全大写的结果
+
+		6. 变量的作用域，什么是局部，什么是全局
+		7. 如何在函数中使用全局变量
+
+第九节 对象
+List.append()
+List.remove()
+List.insert()
+	List: ...收集【数据】
+	函数：代码收集到可以反复使用的单元里面 【代码】
+	对象：把函数和数据收集在一起。收集思想的前进
+	模块：
+	python 是面向对象的
+
+	对象？ Object
+
+
+	什么是对象？比如说一个东西：它像什么？颜色？大小？会做什么？...
+
+	比如说⚽️：捡球、踢球、抛球、充气【都是它可以做什么】
+			 颜色、大小、重量 【都是它长的怎么样】
+
+	物体： 属性 + 动作
+	对象： 属性 + 函数
+
+	⚽️的属性：
+		ball.color
+		ball.size
+		ball.weight
+
+		ball.kick()
+		ball.throw()
+		ball.inflate()
+
+	点语法：
+		Object.attribute 【实例对象 ❌不是类名 -> 】
+			Person.size
+			xiaoming.size
+
+		Object.method()
+
+	1. 创建对象 类（class）
+	1. 人 -> 人类 【姓名 年龄 眼耳口鼻 劳动() 吃饭() 睡觉()】
+	2. 创建每个个体 
+		myBall = Ball()
+		xiaomingsBall = Ball()
+		...
+
+
+	第一步：对象的描述或蓝图，称为一个类（class）
+	第二部：使用类来建立一个真正的对象，这个对象。被称为类的一个实例（instance）
+
+	class Ball:
+    def bounce(self):
+        if self.direction == 'down':
+            self.direction = 'up'
+
+myBall = Ball() 
+myBall.direction = 'down'
+myBall.color = "red"
+myBall.size = 'small'
+myBall.bounce()
+print(myBall.direction)
+	
+	2. 创建⚽️对象的时候，并没有在 size。color 或者 directino 中填入任何东西，必须在创建对象之后填充
+	
+	>> 初始化对象
+		特定的方法：__init__()只要创建这个类的一个新实例，就会运行这个方法，可以向 __init__()方法传递参数
+
+
+class Ball:
+    def __init__(self, color, size, direction):
+        self.color = color
+        self.size = size
+        self.direction = direction
+
+    def bounce(self):
+        if self.direction == 'down':
+            self.direction = 'up'
+
+myBall = Ball("red","small",'down')
+myBall.bounce()
+print(myBall.size, myBall.color, myBall.direction)
+
+	>> print myBall
+		<__main__.Ball instance at 0x00BB..> __str__()
+		如果要显示这个类 加入 __str__() 方法
+
+	3. self 是什么？？
+		是参数 但是并不需要传递
+		
+		每个类方法里面 都一定要设置 self 参数吗 ❌ 试试不放
+
+		self 参数会告诉这个方法哪个对象在调用它
+
+	* 写一个测试类 worker
+	name
+	age
+	salary
+
+	def __init__(self, name, age, year):
+		self.name = name
+		self.age = age
+		self.salary = 100
+
+	def __str__(self):
+		msg = "A Worker"
+		return msg
+
+	def increase(self, year):
+		self.salary = year * 100 + self.salary
+		
+		if self.salary < 200:
+			print("underlying salary")
+		elif self.salary < 500 :
+			print("middle salary band")
+
+		eles :
+			print("high salaries")
+
+
+
+	4. 隐藏数据
+		查看或修改对象中的属性，有两种方式：
+		>>直接访问：
+		self.salary = 100
+		
+		>>或者修改
+		increase(5)
+
+		这个时候，为什么不建议直接修改?
+			确保 salary 只会增加 不会减少
+			salary 的增长是有计算逻辑的
+
+
+Person
+	name
+	age
+	color
+	..
+
+	eat()
+		..
+	run()
+		..
+	sleep()
+		..
+	长个（year）
+		。
+	人物信息
+
+// 创建 3 个人左右
+// 
+
+ 3:继承 
+
+ 父亲-儿子
+
+ 图形 - 圆 - 方形
+ 多态
+
+
+	二> 对象的两个最重要特征
+		1. 多态：同一个方法 不同的行为 
+		比如 三角形和正方形计算
+		Triangle
+		Square
+		getArea()
+
+		2. 继承 
+		class Son(Father):
+
+		多态的两种应用场景
+		1. 不同类
+		2. 继承类 
+
+		-> 根据名称去覆盖
+		-> 在不知道类 类型的情况下，也可以直接调用方法
+
+		实现图形类
+
+
+
+
+（1）题目要求：
+创建两个类
+
+一个是正方形的类
+	属性：
+		边长
+	功能：
+		求周长
+		求面积
+		打印信息
+
+一个是圆的类
+	属性：
+		半径
+		Pi
+	功能：
+		求周长
+		求面积
+		打印信息
+
+测试：
+输入半径 ，获得圆的周长、面积
+输入边长 ， 获得正方形周长 、面积
+
+第十、十一 模块 & 文件
+
+import 
+命名空间
+
+import sys
+sys.path
+查询路径
+
+import XX
+
+import XX from XX
+
+import XX as XX
+
+import *
+
+
+文件：
+f = open("/python.txt",rt)
+权限
+r
+
+t
+w
+
+1. 读取文件 ->  文件在哪：1. 绝对路径 2. 相对路径
+
+2. 使用 with 读取文件
+3. 当文件不存在的时候，读取会怎么样？
+4. 写入文件
+5. 当文件不存在的时候，写入会怎么样？
+文件存在的时候，写入会怎么样？
+
+# -> 爬虫
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
