@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from math import sqrt
 from collections import Counter
+from .metrics import accuracy_socre
 
 #先是类名
 class KNNClassifier:
@@ -55,7 +56,9 @@ class KNNClassifier:
 
 		return votes.most_common(1)[0][0]
 
-
+	def score(self, x_test, y_test):
+		y_predict = self.predict(x_test)
+		return accuracy_socre(y_test, y_predict)
 
 
 
