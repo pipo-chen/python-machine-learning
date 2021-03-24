@@ -25,7 +25,7 @@ class StandardScaler:
 
 		#归一化每一列
 		for col in range(X.shape[1]):
-			resX[:,col] = (X[:,col] - self.mean_[col] / self.scale_[col])
+			resX[:,col] = (X[:,col] - self..mean_[col] / self.scale_[col])
 
 		return resX
 
