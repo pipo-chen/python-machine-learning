@@ -1,7 +1,6 @@
 import numpy as np
 
-#后续还要继续实现
-class SimpleLinearRegression_1:
+class SimpleLinearRegression:
 
 	def __init__(self):
 		self.a_ = None
@@ -17,12 +16,9 @@ class SimpleLinearRegression_1:
 		x_mean = np.mean(x_train)
 		y_mean = np.mean(y_train)
 
-		m = 0.0
-		d = 0.0
-		for x, y in zip(x_train, y_train):
-			m += (x - x_mean) * (y - y_mean)
-			d += (x - x_mean) ** 2
-
+		m = (x_train - x_mean).dot(y_train - y_mean)
+		d = (x_train - x_mean).dot(x_train - x_mean)
+		
 		self.a_ = m / d
 		self.b_ = y_mean - self.a_ * x_mean
 
@@ -41,5 +37,4 @@ class SimpleLinearRegression_1:
 	#完成单个预测
 	def _predict(self, x_single):
 		return self.a_ * x_single + self.b_
-
 
